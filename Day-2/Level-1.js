@@ -44,7 +44,7 @@ console.log(challenge.split())
 console.log(challenge.split(' '))
 
 // 11. Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon' split the string at the comma and change it to an array.
-let web='Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon'
+let web='Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon';
 console.log(web.split(','))
 
 // 12. Change 30 Days Of JavaScript to 30 Days Of Python using replace() method.
@@ -63,7 +63,7 @@ console.log(challenge.indexOf('a'))
 console.log(challenge.lastIndexOf('a'))
 
 // 17. Use indexOf to find the position of the first occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
-var sentence='You cannot end a sentence with because because because is a conjunction'
+var sentence='You cannot end a sentence with because because because is a conjunction';
 console.log(sentence.indexOf('because'))
 
 // 18. Use lastIndexOf to find the position of the last occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
@@ -73,7 +73,7 @@ console.log(sentence.lastIndexOf('because'))
 console.log(sentence.search('because'))
 
 // 20. Use trim() to remove any trailing whitespace at the beginning and the end of a string.E.g ' 30 Days Of JavaScript '.
-str=' 30 Days Of JavaScript '
+str=' 30 Days Of JavaScript ';
 console.log(str.trim())
 
 // 21. Use startsWith() method with the string 30 Days Of JavaScript and make the result true
@@ -86,7 +86,7 @@ console.log(challenge.endsWith('JavaScript'))
 console.log(challenge.match('a'))
 
 // 24. Use concat() and merge '30 Days of' and 'JavaScript' to a single string, '30 Days Of JavaScript'
-stri='30 Days of'
+stri='30 Days of';
 console.log(stri.concat('JavaScript'))
 
 // 25. Use repeat() method to print 30 Days Of JavaScript 2 times
