@@ -81,8 +81,8 @@
 // console.log(!(4 > 3 && 10 > 12))//29
 // console.log(!(4 === '4'))//30
 
-let word1 = "dragon";
-let word2 = "python";
+// let word1 = "dragon";
+// let word2 = "python";
 
 // 31. There is no 'on' in both dragon and python
 // if (!word1.includes("on")) {
