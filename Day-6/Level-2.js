@@ -8,13 +8,13 @@
 // console.log(str)
 
 //2. Write a script which generates a random hexadecimal number.
-// const hexa = '0123456789ABCDEF'
-// let str=''
-// for (let i=0;i<6;i++){
-//     let random_id=Math.floor(Math.random()*hexa.length)
-//     str+=hexa[random_id]
-// }
-// console.log(str)
+const hexa = '0123456789ABCDEF'
+let str=''
+for (let i=0;i<6;i++){
+    let random_id=Math.floor(Math.random()*hexa.length)
+    str+=hexa[random_id]
+}
+console.log(str)
 
 // 3. Write a script which generates a random rgb color number.
 // const red = Math.floor(Math.random() * 256);

@@ -1,19 +1,19 @@
 // 1. Copy countries array(Avoid mutation)
-// const countries = [
-//         'Albania',
-//         'Bolivia',
-//         'Canada',
-//         'Denmark',
-//         'Ethiopia',
-//         'Finland',
-//         'Germany',
-//         'Hungary',
-//         'Ireland',
-//         'Japan',
-//         'Kenya'
-//     ]
-//     const countriescopy=[...countries]
-//     console.log(countriescopy)
+const countries = [
+        'Albania',
+        'Bolivia',
+        'Canada',
+        'Denmark',
+        'Ethiopia',
+        'Finland',
+        'Germany',
+        'Hungary',
+        'Ireland',
+        'Japan',
+        'Kenya'
+    ]
+    const countriescopy=[...countries]
+    console.log(countriescopy)
 
 // 2. Arrays are mutable. Create a copy of array which does not modify the original. Sort the copied array and store in a variable sortedCountries
 // const countries = [
@@ -84,14 +84,14 @@
 // console.log(str)
 
 // 8. Extract all the countries containing two or more words from the countries array and print it as array
-const countries = ['Iceland', 'Finland', 'New Zealand', 'Netherlands', 'South Africa', 'United Kingdom', 'United States'];
+// const countries = ['Iceland', 'Finland', 'New Zealand', 'Netherlands', 'South Africa', 'United Kingdom', 'United States'];
 
-const countriesWithTwoOrMoreWords = [];
+// const countriesWithTwoOrMoreWords = [];
 
-for (const country of countries) {
-  if (country.split(' ').length >= 2) {
-    countriesWithTwoOrMoreWords.push(country);
-  }
-}
+// for (const country of countries) {
+//   if (country.split(' ').length >= 2) {
+//     countriesWithTwoOrMoreWords.push(country);
+//   }
+// }
 
-console.log(countriesWithTwoOrMoreWords);
+// console.log(countriesWithTwoOrMoreWords);

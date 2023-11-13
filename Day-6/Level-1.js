@@ -155,7 +155,7 @@
 // console.log(arr)
   
 
-// 8. Develop a small script which generate array of 5 random numbers and the numbers must be unique
+// 8. Develop a small script which generate array of 5 random numbers and the numbers must be unique(ooooo)
 // let arr=new Set()
 // for (let i=1;i<=5;i++){
 //     let random=Math.floor(Math.random()*100)

@@ -169,14 +169,22 @@ console.log(isPrime(23))
 
 // 16. Write a functions which checks if all items are unique in the array.
 function areAllItemsUnique(arr) {
-    const uniqueSet = new Set(arr);
-    return uniqueSet.size === arr.length;
+    let array=[]
+    for (let i=0;i<arr;i++){
+        if (!array.includes(arr[i])){
+            return null
+        }
+        else{
+            array.push(arr[i])
+        }
+    }
+    return array===arr
   }
   
   // Example usage:
-  console.log(areAllItemsUnique([1, 2, 3, 4, 5])); // true (all items are unique)
+//   console.log(areAllItemsUnique([1, 2, 3, 4, 5])); // true (all items are unique)
   console.log(areAllItemsUnique([1, 2, 3, 2, 4, 5])); // false (there are duplicates)
-  console.log(areAllItemsUnique([])); // true (an empty array is considered to have unique items)
+//   console.log(areAllItemsUnique([])); // true (an empty array is considered to have unique items)
   
 // 17. Write a function which checks if all the items of the array are the same data type.
 function datatype(items){
@@ -195,6 +203,17 @@ console.log(datatype([1, "two", 3.0, true]))
 // 18. JavaScript variable name does not support special characters or symbols except \$ or _. Write a function isValidVariable which check if a variable is valid or invalid variable.
 
 // 19. Write a function which returns array of seven random numbers in a range of 0-9. All the numbers must be unique.
+function sevenRandom(){
+    let uniqueNumbers=[]
+    for (let i=0;i<7;i++){
+        let random=Math.floor(Math.random()*10)
+        if (!uniqueNumbers.includes(random)){
+            uniqueNumbers.push(random)
+        }
+    }
+    return uniqueNumbers
+}
+console.log(sevenRandom())
 
 // 20. Write a function called reverseCountries, it takes countries array and first it copy the array and returns the reverse of the original array
 function reverse(countries){

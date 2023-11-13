@@ -98,12 +98,12 @@ let prompt=require('prompt-sync')()
 // YYYY-MM-DD HH:mm
 // DD-MM-YYYY HH:mm
 // DD/MM/YYYY HH:mm
-let now=new Date()
-let year=now.getFullYear()
-let month=now.getMonth()
-let date=now.getDate()
-let hours=now.getHours()
-let minute=now.getMinutes()
-console.log(`${year}-${month}-${date} ${hours}:${minute}`)
-console.log(`${date}-${month}-${year} ${hours}:${minute}`)
-console.log(`${date}/${month}/${year} ${hours}:${minute}`)
+// let now=new Date()
+// let year=now.getFullYear()
+// let month=now.getMonth()+1
+// let date=now.getDate()
+// let hours=now.getHours()
+// let minute=now.getMinutes()
+// console.log(`${year}-${month}-${date} ${hours}:${minute}`)
+// console.log(`${date}-${month}-${year} ${hours}:${minute}`)
+// console.log(`${date}/${month}/${year} ${hours}:${minute}`)

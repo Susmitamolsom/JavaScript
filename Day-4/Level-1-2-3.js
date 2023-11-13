@@ -118,6 +118,26 @@ let prompt=require('prompt-sync')()
 
 // Enter a month: FEbruary
 // February has 28 days.
+// let month=prompt('Enter the month')
+// let monthlower=month.toLowerCase()
+// if (monthlower==='april' || monthlower==='june' || monthlower==='september' || monthlower==='november'){
+//     console.log(`${month} has 30 days`)
+// }
+// else if (monthlower==='january' || monthlower==='march' || monthlower==='may' || monthlower==='july' || monthlower=='august' || monthlower=='october' || monthlower=='december'){
+//     console.log(`${month} has 31 days`)
+// }
+// else{
+//     console.log(`${month} has 28 days`)
+// }
+
+// 1 .Write a program which tells the number of days in a month, now consider leap year.
+// let year=parseInt(prompt('Enter the year:'))
+// if (year%4===0 && year%100!==0 || year%400===0){
+//     console.log(`${year} is a leap year`)
+// }
+// else{
+//     console.log(`${year} is not a leap year`)
+// }
 let month=prompt('Enter the month')
 let monthlower=month.toLowerCase()
 if (monthlower==='april' || monthlower==='june' || monthlower==='september' || monthlower==='november'){
@@ -127,14 +147,5 @@ else if (monthlower==='january' || monthlower==='march' || monthlower==='may' ||
     console.log(`${month} has 31 days`)
 }
 else{
-    console.log(`${month} has 28 days`)
+    console.log(`${month} has 29 days`)
 }
-
-// 1 .Write a program which tells the number of days in a month, now consider leap year.
-// let year=parseInt(prompt('Enter the year:'))
-// if (year%4==0 && year%100!=0 || year%400==0){
-//     console.log(`${year} is a leap year`)
-// }
-// else{
-//     console.log(`${year} is not a leap year`)
-// }

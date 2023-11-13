@@ -6,6 +6,29 @@
 // const arr = []
 // console.log(arr)
 
+// Methods to manipulate array
+// There are different methods to manipulate an array. These are some of the available methods to deal with arrays:Array, length, concat, indexOf, slice, splice, join, toString, includes, lastIndexOf, isArray, fill, push, pop, shift, unshift
+// push(): Adds one or more elements to the end of an array.
+// pop(): Removes the last element from an array and returns it.
+// unshift(): Adds one or more elements to the beginning of an array.
+// shift(): Removes the first element from an array and returns it.
+// concat(): Combines two or more arrays to create a new array.
+// splice(): Changes the contents of an array by removing, replacing, or adding elements.
+// slice(): Returns a shallow copy of a portion of an array.
+// filter(): Creates a new array with all elements that pass a test implemented by the provided function.
+// map(): Creates a new array by applying a function to each element in the original array.
+// forEach(): Calls a function for each element in the array.
+// reduce(): Reduces an array to a single value by applying a function to each element.
+// find(): Returns the first element in an array that satisfies a provided testing function.
+// findIndex(): Returns the index of the first element in an array that satisfies a provided testing function.
+// sort(): Sorts the elements of an array in place.
+// reverse(): Reverses the order of elements in an array.
+// every(): Tests whether all elements in the array pass a given function.
+// some(): Tests whether at least one element in the array passes a given function.
+// includes(): Checks if an array includes a certain element.
+// indexOf(): Returns the first index at which a specified element can be found in the array.
+// lastIndexOf(): Returns the last index at which a specified element can be found in the array.
+
 // const numbers = [0, 3.14, 9.81, 37, 98.6, 100] // array of numbers
 // const fruits = ['banana', 'orange', 'mango', 'lemon'] // array of strings, fruits
 // const vegetables = ['Tomato', 'Potato', 'Cabbage', 'Onion', 'Carrot'] // array of strings, vegetables
@@ -108,14 +131,20 @@ console.log(numbers) // [10, 20, 3, 4, 5]
 // const eightEmptyValues = Array(8) // it creates eight empty values
 // console.log(eightEmptyValues) // [empty x 8]
 
-const arr = Array() // creates an an empty array
-console.log(arr)
+// const arr = Array() // creates an an empty array
+// console.log(arr)
 
-const eightXvalues = Array(8).fill('X') // it creates eight element values filled with 'X'
-console.log(eightXvalues) // ['X', 'X','X','X','X','X','X','X']
+// const eightXvalues = Array(8).fill('X') // it creates eight element values filled with 'X'
+// console.log(eightXvalues) // ['X', 'X','X','X','X','X','X','X']
 
-const eight0values = Array(8).fill(0) // it creates eight element values filled with '0'
-console.log(eight0values) // [0, 0, 0, 0, 0, 0, 0, 0]
+// const eight0values = Array(8).fill(0) // it creates eight element values filled with '0'
+// console.log(eight0values) // [0, 0, 0, 0, 0, 0, 0, 0]
 
-const four4values = Array(4).fill(4) // it creates 4 element values filled with '4'
-console.log(four4values) // [4, 4, 4, 4]
+// const four4values = Array(4).fill(4) // it creates 4 element values filled with '4'
+// console.log(four4values) // [4, 4, 4, 4]
+
+// const firstList = [1, 2, 3]
+// const secondList = [4, 5, 6]
+// const thirdList = firstList.concat(secondList)
+
+// console.log(thirdList) // [1, 2, 3, 4, 5, 6]

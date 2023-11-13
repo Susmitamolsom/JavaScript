@@ -170,32 +170,3 @@ function randomMacAddress(MacAddress){
     return `${MacAddress[address1]}:${MacAddress[address2]}:${MacAddress[address3]}:${MacAddress[address4]}:${MacAddress[address5]}:${MacAddress[address6]}`
 }
 console.log(randomMacAddress("0123456789ABCDEF"))
-
-let prompt=require('prompt-sync')()
-
-function userIdGeneratedByUser() {
-    const numberOfCharacters = prompt("Enter the number of characters for each ID:");
-    const numberOfIds = prompt("Enter the number of IDs to generate:");
-  
-    if (numberOfCharacters === null || numberOfIds === null) {
-      return; // User canceled the input
-    }
-  
-    for (let i = 0; i < numberOfIds; i++) {
-      let userId = "";
-      for (let j = 0; j < numberOfCharacters; j++) {
-        userId += generateRandomCharacter();
-      }
-      console.log(userId);
-    }
-  }
-  
-  function generateRandomCharacter() {
-    const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-    const randomIndex = Math.floor(Math.random() * characters.length);
-    return characters.charAt(randomIndex);
-  }
-  
-  // Example usage:
-  userIdGeneratedByUser();
-  
