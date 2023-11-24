@@ -59,6 +59,7 @@ function minimum(ages){
 
 function maximum(ages){
     let sorting=ages.sort()
+    // return `Sort ${sorting}`
     return `Max : ${sorting[ages.length-1]}`
 }
 
@@ -68,8 +69,43 @@ function range(ages){
     let max=sorted[ages.length-1]
     return `Range : ${max-min}`
 }
+function mean(ages){
+    let sum=0
+    for (let i=0;i<ages.length;i++){
+        sum+=ages[i]
+    }
+    let avg=Math.round(sum/ages.length)
+    return `Mean; ${avg}`
+}
+
+function median(ages){
+    let sorted=ages.sort()
+    let med=Math.floor(sorted.length/2)
+    return `Median : ${ages[med]}`
+}
+
+function mode(ages){
+    let count=0
+    let numberAge={}
+    let sorted=ages.sort()
+    for (let i=0;i<sorted.length;i++){
+        // console.log(age)
+        let num=sorted[i]
+        if (numberAge[num]=0){
+            count++
+        }
+        else{
+            numberAge.push(sorted[i])
+        }
+    }
+    return `Mode: ${numberAge}, Count : ${count}`
+}
+
 console.log(counts(ages))
 console.log(sum(ages))
 console.log(minimum(ages))
 console.log(maximum(ages))
 console.log(range(ages))
+console.log(mean(ages))
+console.log(median(ages))
+console.log(mode(ages))

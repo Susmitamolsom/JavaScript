@@ -196,15 +196,19 @@ const products = [
 // 2.Create a function called likeProduct. This function will helps to like to the product if it is not liked and remove like if it was liked.
 function likeProduct(productId,likepro){
     for (let product of products){
+        // console.log(product)
         if (product._id===productId){
-            if (product.likes===likepro){
-                product.likes.remove()
+            // console.log(product.likes)
+            if (product.likes.includes(likepro)){
+                product.likes.splice(likepro,1)
+                return product
             }
             else{
                 product.likes.push(likepro)
+                return product
             }
         }
-        return product
+        // return product
     }
 }
 console.log(likeProduct('aegfal','fg12cy'))
