@@ -80,46 +80,46 @@ console.log(cat.getFulldetails())
 // LEVEL-3 EXERCISE
 
 // 2.Create a class called PersonAccount. It has firstname, lastname, incomes, expenses properties and it has totalIncome, totalExpense, accountInfo,addIncome, addExpense and accountBalance methods. Incomes is a set of incomes and its description and expenses is also a set of expenses and its description.
-class personAccount{
-    constructor(firstname,lastname,incomes,expenses){
-        this.firstname=firstname
-        this.lastname=lastname
-        this.incomes=[]
-        this.expenses=[]
-    }
-    totalIncomes(){
-        let total=0
-        for (let income of this.incomes){
-            total+=income.amount
-        }
-        return total
-    }
-    totalExpenses(){
-        let total=0
-        for (let expense of this.expenses){
-            total+=expense.amount
-        }
-        return total
-    }
-    accountbalance(){
-        const incomeTotal=this.totalIncomes()
-        const expensesTotal=this.totalExpenses()
-        return incomeTotal-expensesTotal
-    }
-    accountInfo(){
-        const balance=this.accountbalance()
-        return ` Account holder:${this.firstname} ${this.lastname} \n Total income:${this.totalIncomes()}\n Total Expenses:${this.totalExpenses()}\n Account balance:${balance} `
-    }
-    addincomes(description,amount){
-        this.incomes.push({description,amount})
-    }
-    addExpenses(description,amount){
-        this.expenses.push({description,amount})
-    }
-}
-const person=new personAccount('Rasmi','Susmita')
-person.addincomes('Salary',8000)
-person.addincomes('Freelance Work',2000)
-person.addExpenses('Rent',2000)
-person.addExpenses('Groceries',1000)
-console.log(person.accountInfo())
+// class personAccount{
+//     constructor(firstname,lastname,incomes,expenses){
+//         this.firstname=firstname
+//         this.lastname=lastname
+//         this.incomes=[]
+//         this.expenses=[]
+//     }
+//     totalIncomes(){
+//         let total=0
+//         for (let income of this.incomes){
+//             total+=income.amount
+//         }
+//         return total
+//     }
+//     totalExpenses(){
+//         let total=0
+//         for (let expense of this.expenses){
+//             total+=expense.amount
+//         }
+//         return total
+//     }
+//     accountbalance(){
+//         const incomeTotal=this.totalIncomes()
+//         const expensesTotal=this.totalExpenses()
+//         return incomeTotal-expensesTotal
+//     }
+//     accountInfo(){
+//         const balance=this.accountbalance()
+//         return ` Account holder:${this.firstname} ${this.lastname} \n Total income:${this.totalIncomes()}\n Total Expenses:${this.totalExpenses()}\n Account balance:${balance} `
+//     }
+//     addincomes(description,amount){
+//         this.incomes.push({description,amount})
+//     }
+//     addExpenses(description,amount){
+//         this.expenses.push({description,amount})
+//     }
+// }
+// const person=new personAccount('Rasmi','Susmita')
+// person.addincomes('Salary',8000)
+// person.addincomes('Freelance Work',2000)
+// person.addExpenses('Rent',2000)
+// person.addExpenses('Groceries',1000)
+// console.log(person.accountInfo())

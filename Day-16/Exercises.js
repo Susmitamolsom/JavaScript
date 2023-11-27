@@ -128,9 +128,3 @@
       
 //       const txt = JSON.stringify(users, undefined, 4)
 //       console.log(txt) 
-
-let prompt=require('prompt-sync')()
-let a=parseInt(prompt('aa'))
-let b=parseInt(prompt('bb'))
-let c=parseInt(prompt('c'))
-console.log(a+b+c)

@@ -43,10 +43,10 @@ const users = [
       age:20
     }
     ]
-// for (let user of users){
-//     let {name,scores,skills,age}=user
-//     console.log({name:name,scores:scores,skills:skills,age:age})
-// }
+for (let user of users){
+    let {name,scores,skills,age}=user
+    console.log({name:name,scores:scores,skills:skills,age:age})
+}
 
 // 2.Find the persons who have less than two skills
 let lessThantwoSkills=[]

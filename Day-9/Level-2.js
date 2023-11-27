@@ -54,11 +54,6 @@ function countFirstletter(countryName){
   })
   return result
 }
-// let result=[]
-// Object.keys(letterCount).forEach(function(letter){
-//   result.push({letter,count:letterCount})
-//   return result
-// })
 let countOfletter=countFirstletter(countries)
 console.log(countOfletter)
 
@@ -78,3 +73,5 @@ function getLastTenCountries(){
 }
 let lastTencountry=getLastTenCountries()
 console.log(lastTencountry)
+
+// 7.Find out which letter is used many times as initial for a country name from the countries array (eg. Finland, Fiji, France etc)

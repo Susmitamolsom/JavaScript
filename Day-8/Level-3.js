@@ -208,7 +208,6 @@ function likeProduct(productId,likepro){
                 return product
             }
         }
-        // return product
     }
 }
 console.log(likeProduct('aegfal','fg12cy'))
