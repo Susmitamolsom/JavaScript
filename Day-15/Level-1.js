@@ -1,14 +1,14 @@
 // 1.Create an Animal class. The class will have name, age, color, legs properties and create different methods
-// class Animal{
-//     constructor (name,age,color,legs){
-//         this.name=name
-//         this.age=age
-//         this.color=color
-//         this.legs=legs
-//     }
-// }
-// const Animal1=new Animal('Rocky',2,'Brown',4)
-// console.log(Animal1)
+class Animal{
+    constructor (name,age,color,legs){
+        this.name=name
+        this.age=age
+        this.color=color
+        this.legs=legs
+    }
+}
+const Animal1=new Animal('Rocky',2,'Brown',4)
+console.log(Animal1)
 
 // 2.Create a Dog and Cat child class from the Animal Class.
 // class Animal{
@@ -37,44 +37,44 @@
 
 // LEVEL-2 EXERCISE
 // 1.Override the method you create in Animal class
-class Animal{
-    constructor(name,age,color,legs){
-        this.name=name
-        this.age=age
-        this.color=color
-        this.legs=legs
-    }
-    getFulldetails(){
-        return `${this.name},${this.age},${this.color},${this.legs}`
-    }
-}
-class Dog extends Animal{
-    constructor (name,age,color,legs){
-        super(name,age,color,legs)
-    }
-    getFulldetails(){
-        return `${this.name},${this.age},${this.color},${this.legs}`
-    }
-    bark(){
-        return `${this.name},Says:bow bow!`
-    }
-}
-class Cat extends Animal{
-    constructor(name,age,color,isIndoor){
-        super(name,age,color,4)
-        this.isIndoor=isIndoor
-    }
-    getFulldetails(){
-        return `${this.name},${this.age},${this.color},${this.legs}`
-    }
-    meow(){
-        return `${this.name},Says:meow!`
-    }
-}
-const dog=new Dog('Montu',3,'Red',4)
-const cat=new Cat('Nini',2,'Brown',true)
-console.log(dog.getFulldetails())
-console.log(cat.getFulldetails())
+// class Animal{
+//     constructor(name,age,color,legs){
+//         this.name=name
+//         this.age=age
+//         this.color=color
+//         this.legs=legs
+//     }
+//     getFulldetails(){
+//         return `${this.name},${this.age},${this.color},${this.legs}`
+//     }
+// }
+// class Dog extends Animal{
+//     constructor (name,age,color,legs){
+//         super(name,age,color,legs)
+//     }
+//     getFulldetails(){
+//         return `${this.name},${this.age},${this.color},${this.legs}`
+//     }
+//     bark(){
+//         return `${this.name},Says:bow bow!`
+//     }
+// }
+// class Cat extends Animal{
+//     constructor(name,age,color,isIndoor){
+//         super(name,age,color,4)
+//         this.isIndoor=isIndoor
+//     }
+    // getFulldetails(){
+    //     return `${this.name},${this.age},${this.color},${this.legs}`
+    // }
+    // meow(){
+    //     return `${this.name},Says:meow!`
+    // }
+// }
+// const dog=new Dog('Montu',3,'Red',4)
+// const cat=new Cat('Nini',2,'Brown',true)
+// console.log(dog.getFulldetails(),dog.bark())
+// console.log(cat)
 
 
 // LEVEL-3 EXERCISE
