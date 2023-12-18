@@ -65,10 +65,3 @@
 //     title.style.fontSize = '30px'
 //   }
 // })
-
-let title = document.createElement('h1')
-        title.className = 'title'
-        title.style.fontSize = '24px'
-        title.textContent = 'Creating HTML element DOM Day 2'
-
-        console.log(title) 

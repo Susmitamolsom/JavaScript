@@ -1,0 +1,67 @@
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document Object Model:30 Days Of JavaScript</title>
+</head>
+
+<body>
+
+    <script>
+        //let title = document.createElement('h1')
+        //title.className = 'title'
+        //title.style.fontSize = '24px'
+        //title.textContent = 'Creating HTML element DOM Day 2'
+
+        //console.log(title)
+        let title
+        for (let i = 0; i < 3; i++) {
+            title = document.createElement('h1')
+            title.className = 'title'
+            title.style.fontSize = '24px'
+            title.textContent = i
+            document.body.appendChild(title)
+        }
+    </script>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamically Generated Numbers</title> 
+</head>
+<body>
+
+<div id="numberContainer"></div>
+
+<script>
+  // Function to generate numbers dynamically and append to the container
+  function generateNumbers() {
+    var container = document.getElementById('numberContainer');
+
+    // Set grid and flex-wrap styles using inline style
+    container.style.display = 'grid';
+    container.style.gridTemplateColumns = 'repeat(6, 1fr)';
+    container.style.gap = '5px';
+    container.style.border='1px solid black'
+    container.style.width='300px'
+    container.style.flexWrap = 'wrap';
+
+    for (var i = 1; i <= 100; i++) {
+      var numberBox = document.createElement('div');
+      numberBox.className = 'numberBox';
+      numberBox.textContent = i;
+      container.appendChild(numberBox);
+    }
+  }
+
+  // Call the function to generate numbers
+  generateNumbers();
+</script>
+
+</body>
+</html>
